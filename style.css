@@ -49,7 +49,7 @@ body:not(.custom-background-image):after {
         .site-content {
             padding-right: 0%;
             padding-left: 0%;
-            padding-top: 2%;
+            padding-top: 1%;
         }
 }
 
@@ -59,7 +59,7 @@ body:not(.custom-background-image):after {
         .site-content {
         padding-right: 2%;
         padding-left: 2%;
-        padding-top: 2%;
+        padding-top: 1%;
     }
 }
 
@@ -67,9 +67,9 @@ body:not(.custom-background-image):after {
     and (min-width : 1480px)
     {
         .site-content {
-                padding-right: 15%;
-                padding-left: 15%;
-                padding-top: 2%;
+                padding-right: 12%;
+                padding-left: 12%;
+                padding-top: 1%;
         }
 }
 
@@ -111,6 +111,19 @@ body:not(.custom-background-image):after {
             margin-left: 2.5%;
             margin-right: 2.5%
         }
+}
+
+
+.breadcrumb {
+    margin-top: 52px;
+    margin-left: 12%;
+    color: #5c5c5c;
+    font-size: 0.8em;
+}
+
+.sidebar {
+    width: 17%;
+    margin-left: 83%;
 }
 
 /*Menu Float down fix*/
@@ -229,7 +242,7 @@ body:not(.custom-background-image):before,
 
 
 h1 {
-	color: #282828;
+	  color: #282828;
     font-weight: 800;
 }
 
@@ -263,6 +276,10 @@ h1 {
     color: #757575;
 }
 
+a {
+  color: #68c3f3;
+}
+
 p {
 	color: #3e3d3d;
 	font-size: 1.15rem;
@@ -270,8 +287,7 @@ p {
 }
 
 .site-header-main {
-    background-color: green;
-    /*background-color: #2c2c2c;*/
+    background-color: #2c2c2c;
 }
 
 #colophon {
@@ -284,7 +300,7 @@ p {
 
 .main-navigation a {
     color: #fff;
-    background-color: #1e1e1e;
+    background-color: #2c2c2c;
     padding-bottom: 20px;
     padding-top: 20px;
 
@@ -295,19 +311,64 @@ p {
 }
 
 div.site-branding {
-    margin-left: 40px;
+    margin-left: 4.1%;
 }
 
 .widget {
     border-top: none;
     font-size: 1.1rem;
-    padding-top: 8px;
-    margin-bottom: 15px;
+    padding-top: 0px;
+    margin-bottom: 50px;
 }
 
 .widget .widget-title {
     font-size: 1.2rem;
     margin-bottom: 6px;
+}
+
+/*Weitere Beiträge*/
+.yarpp-thumbnails-horizontal .yarpp-thumbnail {
+  max-width: 24%; overflow: hidden !important;
+  width: 24% !important;
+  min-width: 150px !important;
+  border: 0px !important;
+
+}
+
+.yarpp-thumbnail > img, .yarpp-thumbnail-default {
+  max-width: initial !important; /* Maybe optional. See note below */
+  width: auto !important;
+  margin: 0px !important;
+}
+
+.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
+  max-height: none !important;
+  line-height: 1.2em !important;
+  border: 0px;
+}
+
+.yarpp-thumbnail {
+  height: 218px !important;
+  background-color: #f2eded!important;
+}
+
+.yarpp-related .yarpp-thumbnail-title {
+    font-weight: 400 !important;
+    font-size: 0.9em !important;
+    width: 96% !important;
+    color: #3e3d3d !important;
+    margin-top: 13px !important;
+    padding-left: 6px !important;
+}
+
+.entry-content a img, .entry-summary a img, .comment-content a img, .textwidget a img {
+    margin-top: 0px;
+
+}
+
+.rpwwt-widget ul {
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
 
 .main-navigation ul ul li {
@@ -316,7 +377,8 @@ div.site-branding {
 }
 
 .main-navigation a {
-    background-color: #1e1e1e;
+    color: #bcb8b8;
+    letter-spacing: 0.04em;
 }
 
 .main-navigation ul ul li {
@@ -326,9 +388,24 @@ div.site-branding {
 .main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
     font-weight: 800;
     letter-spacing: 1px;
-    background-color: #68c3f3;
+    background-color: #2fbc46;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 21px;
+    color: #2c2c2c;
+    letter-spacing: -0.01em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #2c2c2c;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #2c2c2c;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #2c2c2c;
 }
 
 .widget ul {
@@ -426,11 +503,18 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
 }
 
 .search-form {
-    margin-top: 15px;
+    margin-top: 17px;
+}
+
+.search-submit {
+    width: 35px;
+    #2fbc46
 }
 
 .search-submit::before {
     line-height: 25px;
+    padding-right: 7px;
+    color: #2c2c2c;
 }
 
 input[type="search"].search-field {
@@ -440,8 +524,33 @@ input[type="search"].search-field {
     border: none;
 }
 
+.main-navigation ul ul::before, .main-navigation ul ul::after {
+    border-style: none;
+}
+
 button, button[disabled]:hover, button[disabled]:focus, input[type="button"], input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="reset"], input[type="reset"][disabled]:hover, input[type="reset"][disabled]:focus, input[type="submit"], input[type="submit"][disabled]:hover, input[type="submit"][disabled]:focus {
-    background: #68c3f3;
+    background-color: #2fbc46;
+}
+
+.main-navigation ul ul a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+    color: #fff;
+}
+
+.main-navigation ul ul li {
+    border: 1px solid #3e3e3e;
+}
+
+.main-navigation ul ul {
+    border-bottom: none;
+}
+
+.menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2043{
+  height: 10px;
 }
 
 .menu-toggle {
@@ -530,8 +639,8 @@ a.next.page-numbers {
 
 .pagination .current {
     font-weight: 800;
-    background-color: #68c3f3;
-    border-radius: 6px;
+    background-color: #2fbc46;
+    border-radius: 2px;
     color: white;
     font-size: 1rem;
     padding-top: 13px;
@@ -546,7 +655,7 @@ a.next.page-numbers {
 }
 
 .content-area {
-    width: 73%;
+    width: 77%;
 
 }
 
@@ -560,4 +669,41 @@ a.next.page-numbers {
 .entry-footer a:hover,
 .site-info a:hover {
 	box-shadow: 0 0px 0 0;
+}
+
+/*Comment Section*/
+
+.comments-title, .comment-reply-title {
+    border-top: 0px;
+}
+
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
+    border: 0px;
+    background-color: #bcb8b8;
+}
+
+#author {
+  width: 50%;
+  height: 56px;
+}
+
+#email {
+  width: 50%;
+  height: 56px;
+}
+
+#url {
+  width: 50%;
+  height: 56px;
+}
+
+.comment-form {
+    padding-top: 1.75em;
+    margin-left: 18%;
+}
+
+/*Footer*/
+
+#colophon {
+    background-color: #2c2c2c;
 }

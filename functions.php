@@ -82,7 +82,7 @@ function nav_breadcrumb() {
 
  if ( !is_home() && !is_front_page() || is_paged() ) {
 
- echo '<nav class="breadcrumb">Sie sind hier: ';
+ echo '<nav class="breadcrumb">';
 
  global $post;
  $homeLink = get_bloginfo('url');
@@ -167,7 +167,7 @@ function nav_breadcrumb() {
  echo '</nav>';
 
  }
-} 
+}
 
 
 ?>
