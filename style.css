@@ -177,7 +177,7 @@ body:not(.custom-background-image):after {
 @media screen
     and (min-width: 986px){
         body:not(.search-results) article:not(.type-page) .entry-footer {
-        width: 16%;
+        width: 13%;
     }
     .cat-links {
     border-top: 1px solid #151111;
@@ -197,10 +197,13 @@ body:not(.custom-background-image):after {
     background-color: #68c3f3;
     padding-top: 6px;
     border-radius: 2px;
-    color: #fff;
+    color: #fcfcfc;
     padding-bottom: 2px;
     padding-left: 16px;
     padding-right: 16px;
+    letter-spacing: 0.03em;
+    font-size: 0.8em;
+    font-weight: 400;
 }
 
 .dropdown-toggle {
@@ -257,7 +260,7 @@ h1 {
 .entry-title {
 	font-size: 2.1rem;
 	margin-bottom: 0.5em;
-    line-height: 1.6rem;
+  line-height: 2.5rem;
 }
 
 .entry-content h2 {
@@ -318,7 +321,7 @@ div.site-branding {
     border-top: none;
     font-size: 1.1rem;
     padding-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
 }
 
 .widget .widget-title {
@@ -411,6 +414,7 @@ div.site-branding {
 .widget ul {
     list-style: none;
     margin-left: 0px;
+    line-height: 1.45em;
 }
 
 .site-info {display:none;}
@@ -559,10 +563,10 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 }
 
 li.current-cat {
-    background-color: #68c3f3;
-    border-color: #68c3f3;
+    background-color: #2fbc46;
+    border-color: #2fbc46;
     border-style: solid;
-    width: 50%;
+    width: 80%;
     color: #1e1e1e;
     border-width: 5px;
 }
@@ -702,8 +706,56 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
     margin-left: 18%;
 }
 
+.comments-title, .comment-reply-title {
+    margin-left: 18%;
+}
+
 /*Footer*/
 
 #colophon {
     background-color: #2c2c2c;
+}
+
+
+/*Home Styling*/
+.home .content-area{
+  width: 74%;
+}
+
+.home .site-content {
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-top: 4%;
+}
+
+.home .sidebar {
+  width: 23%;
+
+}
+
+.home .entry-title {
+  font-size: 1.9rem;
+}
+
+.home .entry-content h2 {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.home .cat-links {
+    margin-top: 19px;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    margin-right: 24px;
+    border-top: 1px solid #bcb8b8;
+}
+
+.tags-links {
+  line-height: 1.2em;
+}
+
+.cat-links {
+    border-top: 1px solid #bcb8b8;
+    margin-top: 40px;
+    padding-top: 10px;
 }
