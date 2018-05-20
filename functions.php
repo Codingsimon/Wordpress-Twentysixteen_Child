@@ -169,4 +169,9 @@ function nav_breadcrumb() {
  }
 }
 
+//Bildkomprimierung
+add_filter('jpeg_quality', function($arg){return 100;}); add_filter( 'wp_editor_set_quality', function($arg){return 100;} );
+add_image_size( 'yarpp-thumbnail', 300, 200, true );
+
+
 ?>
