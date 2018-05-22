@@ -108,8 +108,8 @@ body:not(.custom-background-image):after {
 @media screen
     and (max-width : 695px) {
         .post-thumbnail {
-            margin-left: 2.5%;
-            margin-right: 2.5%
+            margin-left: 0%;
+            margin-right: 0%
         }
 }
 
@@ -121,9 +121,12 @@ body:not(.custom-background-image):after {
     font-size: 0.8em;
 }
 
-.sidebar {
-    width: 17%;
-    margin-left: 83%;
+@media screen
+    and (min-width : 910px) {
+      .sidebar {
+          width: 17%;
+          margin-left: 83%;
+      }
 }
 
 /*Menu Float down fix*/
@@ -257,11 +260,11 @@ h1 {
     line-height: 1.35rem;
 }
 
-.entry-title {
+/* .entry-title {
 	font-size: 2.1rem;
 	margin-bottom: 0.5em;
   line-height: 2.5rem;
-}
+} */
 
 .entry-content h2 {
 	font-size: 1.35rem;
@@ -658,11 +661,6 @@ a.next.page-numbers {
     text-decoration: none;
 }
 
-.content-area {
-    width: 77%;
-
-}
-
 .entry-content a,
 .entry-summary a,
 .taxonomy-description a,
@@ -718,31 +716,64 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
 
 
 /*Home Styling*/
-.home .content-area{
-  width: 74%;
+@media screen
+    and (min-width : 910px) {
+      .search .content-area, .category .content-area, .home .content-area{
+        width: 74%;
+      }
 }
 
-.home .site-content {
-    padding-left: 19%;
-    padding-right: 19%;
-    padding-top: 4%;
+@media screen
+    and (min-width : 910px) {
+      .search .site-content, .category .site-content, .home .site-content {
+          padding-left: 19%;
+          padding-right: 19%;
+          padding-top: 4%;
+      }
 }
 
-.home .sidebar {
-  width: 23%;
-
+@media screen
+    and (min-width : 910px) {
+      .search .sidebar, .category .sidebar, .home .sidebar {
+      width: 23%;
+  }
 }
 
-.home .entry-title {
-  font-size: 1.9rem;
+@media screen
+    and (min-width : 910px) {
+      .search .entry-title, .category .entry-title, .home .entry-title {
+        font-size: 1.9rem;
+        font-weight: 800;
+      }
 }
 
-.home .entry-content h2 {
-  font-size: 1.15rem;
-  font-weight: 400;
+@media screen
+    and (max-width : 909px) {
+      .search .entry-title, .category .entry-title, .home .entry-title {
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: -5px;
+      }
 }
 
-.home .cat-links {
+@media screen
+    and (min-width : 910px) {
+      .search h2, .category .entry-content h2, .home .entry-content h2 {
+        font-size: 1.15rem;
+        font-weight: 400;
+      }
+}
+
+@media screen
+    and (max-width : 909px) {
+      .search h2, .category .entry-content h2, .home .entry-content h2 {
+        font-size: 1.05rem;
+        line-height: 1.3em;
+        margin-top: -0.5em;
+      }
+}
+
+.search .cat-links, .category .cat-links, .home .cat-links {
     margin-top: 19px;
     margin-bottom: 4px;
     padding-top: 10px;
@@ -750,6 +781,41 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
     border-top: 1px solid #bcb8b8;
 }
 
+/* Kategorie Suche*/
+.page-header {
+  border-bottom: 1px solid #ddd;
+  border-top: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.page-title {
+  font-size: 2.4em;
+  color: #7e837f;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.search .breadcrumb, .category .breadcrumb {
+  margin-left: 19%;
+}
+
+.search time.entry-date.published, .category time.entry-date.published {
+    margin-left: 0px;
+    float: left;
+}
+
+/*breadcrumb*/
+.breadcrumb a {
+  border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb .current-page {
+    border-bottom: 1px solid #ddd;
+}
+
+/*Author Section*/
 .tags-links {
   line-height: 1.2em;
 }
