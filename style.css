@@ -121,14 +121,6 @@ body:not(.custom-background-image):after {
     font-size: 0.8em;
 }
 
-@media screen
-    and (min-width : 910px) {
-      .sidebar {
-          width: 17%;
-          margin-left: 83%;
-      }
-}
-
 /*Menu Float down fix*/
 
 @media screen
@@ -170,7 +162,7 @@ body:not(.custom-background-image):after {
     and (max-width : 985px) {
         .entry-footer {
         width: 80% !important;
-        margin-top: 16em;
+        margin-top: 1em;
     }
     .cat-links {
     border-top: 5px;
@@ -225,6 +217,16 @@ body:not(.search-results) article:not(.type-page) img.below-entry-meta, body:not
 img {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+@media screen
+    and (min-width : 696px)
+    and (max-width : 909px) {
+      .post-thumbnail img{
+      max-width: 122%;
+      margin-top: 10px;
+	    margin-bottom: 10px;
+    }
 }
 
 .site {
@@ -610,12 +612,13 @@ a.url.fn.n{
     float: left;
     margin-left: 10px;
     margin-right: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 7px;
+    margin-bottom: -4px;
 }
 
 time.entry-date.published {
     margin-left: 10px;
+    margin-right: 26px;
     float: left;
 }
 
@@ -633,6 +636,8 @@ body.home time.entry-date.published {
 
 #content.time.entry-date.published {
     margin-left: 16px;
+    margin-top: -5px;
+    margin-bottom: 7px;
 }
 
 .pagination {
@@ -738,21 +743,67 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
       }
 }
 
+/*Sidebar responsive*/
 @media screen
-    and (min-width : 910px) {
+    and (min-width : 910px)
+    and (max-width : 1479px) {
       .search .site-content, .category .site-content, .home .site-content {
-          padding-left: 19%;
-          padding-right: 19%;
+        padding-left: 6%;
+        padding-right: 15%;
+        padding-top: 4%;
+      }
+}
+
+@media screen
+      and (min-width : 1480px) {
+      .search .site-content, .category .site-content, .home .site-content {
+          padding-left: 18%;
+          padding-right: 22%;
           padding-top: 4%;
       }
 }
 
 @media screen
-    and (min-width : 910px) {
+    and (min-width : 1480px) {
       .search .sidebar, .category .sidebar, .home .sidebar {
-      width: 23%;
+      width: 26%;
   }
 }
+
+@media screen
+    and (min-width : 910px)
+    and (max-width : 1479px) {
+      .search .sidebar, .category .sidebar, .home .sidebar {
+      width: 27%;
+  }
+}
+
+/* Sidebar Article */
+@media screen
+    and (min-width : 1192px) {
+      .sidebar {
+          width: 21%;
+          margin-left: 78%;
+      }
+}
+
+/*Sidebar Home*/
+@media screen
+    and (min-width : 1192px) {
+      .home .sidebar, .category .sidebar{
+          width: 22%;
+          margin-left: 83%;
+      }
+}
+
+@media screen
+    and (min-width : 910px)
+    and (max-width : 1192px) {
+      .sidebar {
+          width: 17%;
+          margin-left: 80%;
+      }
+    }
 
 @media screen
     and (min-width : 910px) {
