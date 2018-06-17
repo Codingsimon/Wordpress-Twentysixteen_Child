@@ -548,7 +548,7 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 
 .main-navigation li:hover > a, .main-navigation li.focus > a {
     color: #fff;
-    border: 1px solid #3e3e3e;
+    border: 0px solid #3e3e3e;
 }
 
 .main-navigation li {
