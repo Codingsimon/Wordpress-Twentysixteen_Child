@@ -45,7 +45,10 @@
 				</div><!-- .site-branding -->
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
-					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
+					<button id="menu-toggle" class="menu-toggle">
+						<!-- <?php _e( 'Menu', 'twentysixteen' ); ?> -->
+						<span class="dashicons dashicons-menu"></span>
+					</button>
 
 					<div id="site-header-menu" class="site-header-menu">
 						<?php if ( has_nav_menu( 'primary' ) ) : ?>

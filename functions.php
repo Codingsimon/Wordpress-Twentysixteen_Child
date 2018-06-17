@@ -174,4 +174,13 @@ add_filter('jpeg_quality', function($arg){return 100;}); add_filter( 'wp_editor_
 add_image_size( 'yarpp-thumbnail', 300, 200, true );
 
 
+/********************************************************/
+// Adding Dashicons in WordPress Front-end
+/********************************************************/
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
+
+
 ?>
